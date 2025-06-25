@@ -1,0 +1,1 @@
+surface_set_target(in_target ? to_surface : from_surface);

@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_polka_dots_curtain",
+  "name":"shdr_polka_dots_curtain",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

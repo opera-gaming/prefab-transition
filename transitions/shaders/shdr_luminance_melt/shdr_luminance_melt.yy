@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_luminance_melt",
+  "name":"shdr_luminance_melt",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}
