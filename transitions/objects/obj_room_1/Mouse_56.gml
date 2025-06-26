@@ -1,5 +1,5 @@
 if (!variable_global_exists("fader_type")) {
-    global.fader_type = TransitionType.kSqueeze;
+    global.fader_type = TransitionType.kAngular;
 } else {
     global.fader_type += 1;    
 }
