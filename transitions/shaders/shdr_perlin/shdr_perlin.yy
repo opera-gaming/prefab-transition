@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_perlin",
+  "name":"shdr_perlin",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

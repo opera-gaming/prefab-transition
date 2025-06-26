@@ -30,6 +30,14 @@ if (in_target) {
             var uniform_name = string_delete(key, string_length(key)-4, 5);
             var loc = shader_get_uniform(shader, uniform_name);
             shader_set_uniform_f(loc, val[0], val[1]);
+        } else if (string_ends_with(key, "_vec3")) {
+            var uniform_name = string_delete(key, string_length(key)-4, 5);
+            var loc = shader_get_uniform(shader, uniform_name);
+            shader_set_uniform_f(loc, val[0], val[1], val[2]);
+        } else if (string_ends_with(key, "_vec4")) {
+            var uniform_name = string_delete(key, string_length(key)-4, 5);
+            var loc = shader_get_uniform(shader, uniform_name);
+            shader_set_uniform_f(loc, val[0], val[1], val[2], val[3]);
         }
     }
     
