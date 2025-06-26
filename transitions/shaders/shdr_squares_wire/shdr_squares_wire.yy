@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_squares_wire",
+  "name":"shdr_squares_wire",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_butterfly_wave",
+  "name":"shdr_butterfly_wave",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

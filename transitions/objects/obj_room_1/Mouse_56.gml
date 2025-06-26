@@ -1,5 +1,5 @@
 if (!variable_global_exists("fader_type")) {
-    global.fader_type = 0;
+    global.fader_type = TransitionType.kSqueeze;
 } else {
     global.fader_type += 1;    
 }

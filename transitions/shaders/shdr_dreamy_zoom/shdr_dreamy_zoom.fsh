@@ -6,11 +6,11 @@ uniform float ratio;
 varying vec2 v_vTexcoord;
 
 vec4 getToColor(vec2 uv) {
-    return texture2D(to_tex, uv);
+    return texture2D(to_tex, vec2(uv.x, 1.0-uv.y));
 }
 
 vec4 getFromColor(vec2 uv) {
-    return texture2D(from_tex, uv);
+    return texture2D(from_tex, vec2(uv.x, 1.0-uv.y));
 }
 
 // ---- transition -----

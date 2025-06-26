@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_polar_function",
+  "name":"shdr_polar_function",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

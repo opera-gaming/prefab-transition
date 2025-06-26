@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_window_blinds",
+  "name":"shdr_window_blinds",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

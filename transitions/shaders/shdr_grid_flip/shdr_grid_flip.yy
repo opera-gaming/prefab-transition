@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_grid_flip",
+  "name":"shdr_grid_flip",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

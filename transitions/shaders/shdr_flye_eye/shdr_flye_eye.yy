@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_flye_eye",
+  "name":"shdr_flye_eye",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

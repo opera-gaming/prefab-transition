@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_crazy_parametric",
+  "name":"shdr_crazy_parametric",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

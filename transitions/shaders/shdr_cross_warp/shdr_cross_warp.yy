@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_cross_warp",
+  "name":"shdr_cross_warp",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

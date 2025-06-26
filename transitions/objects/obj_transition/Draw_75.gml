@@ -42,10 +42,10 @@ if (in_target) {
     }
     
     draw_primitive_begin(pr_trianglestrip);
-    draw_vertex_texture(-1, -1, 0, 1);
-    draw_vertex_texture(1, -1, 1, 1);
-    draw_vertex_texture(-1, 1, 0, 0);
-    draw_vertex_texture(1, 1, 1, 0);
+    draw_vertex_texture(-1, -1, 0, 0);
+    draw_vertex_texture(1, -1, 1, 0);
+    draw_vertex_texture(-1, 1, 0, 1);
+    draw_vertex_texture(1, 1, 1, 1);
     draw_primitive_end();
     
     shader_reset();    

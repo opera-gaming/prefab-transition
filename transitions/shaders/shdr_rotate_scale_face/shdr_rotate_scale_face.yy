@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_rotate_scale_face",
+  "name":"shdr_rotate_scale_face",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}

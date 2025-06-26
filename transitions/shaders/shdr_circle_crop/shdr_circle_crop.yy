@@ -1,0 +1,12 @@
+{
+  "$GMShader":"",
+  "%Name":"shdr_circle_crop",
+  "name":"shdr_circle_crop",
+  "parent":{
+    "name":"Shaders",
+    "path":"folders/Shaders.yy",
+  },
+  "resourceType":"GMShader",
+  "resourceVersion":"2.0",
+  "type":1,
+}
