@@ -1,5 +1,8 @@
-draw_set_color(make_color_rgb(163,40,116));
-draw_circle(room_width*0.5 + sin(t) * 200, room_height * 0.5 + cos(t) * 200, 100, false);
+var data = video_draw();
+if (data[0] == 0) { 
+    draw_surface_stretched(data[1], 0, 0, room_width, room_height);
+}
+
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 draw_set_color(c_white);
