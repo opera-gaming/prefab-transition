@@ -65,3 +65,4 @@ function room_goto_transition(room, type, time, params) {
         global.active_transition.set_type(type, params);
     }
 }
+#export room_goto_transition
