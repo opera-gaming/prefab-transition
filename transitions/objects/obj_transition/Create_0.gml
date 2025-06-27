@@ -122,14 +122,56 @@ defaults = [
 
 shader = shaders[0];
 params = defaults[0];
+uniforms = [];
+progress = -1;
 
-set_type = function (type, p) {
-  var idx = type % array_length(shaders);
-  shader = shaders[idx];
-  params = defaults[idx];
+set_type = function (type, p) { 
+    var idx = type % array_length(shaders);
+    shader = shaders[idx];
+    params = defaults[idx];
+    progress = shader_get_uniform(shader, "progress");
+    uniforms = [];
     
     var keys = variable_struct_get_names(p);
     for (var i = 0; i < array_length(keys); i++) {
-        params[$ keys[i]] = p[$ keys[i]]
-  }
+        var key = keys[i];
+        var val = p[$ key];
+        params[$ key] = val;
+    }
+    
+    keys = variable_struct_get_names(params);
+    for (var i = 0; i < array_length(keys); i++) {
+        var key = keys[i];
+        var val = params[$ key];
+        
+        if (string_ends_with(key, "_b")) {
+            var uniform_name = string_delete(key, string_length(key)-1, 2);
+            var loc = shader_get_uniform(shader, uniform_name);
+            array_push(uniforms, [shader_set_uniform_i, loc, [val ? 1 : 0]]);
+        } else if (string_ends_with(key, "_i")) {
+            var uniform_name = string_delete(key, string_length(key)-1, 2);
+            var loc = shader_get_uniform(shader, uniform_name);
+            array_push(uniforms, [shader_set_uniform_i, loc, [val]]);
+        } else if (string_ends_with(key, "_f")) {
+            var uniform_name = string_delete(key, string_length(key)-1, 2);
+            var loc = shader_get_uniform(shader, uniform_name);
+            array_push(uniforms, [shader_set_uniform_f, loc, [val]]);
+        } else if (string_ends_with(key, "_vec2")) {
+            var uniform_name = string_delete(key, string_length(key)-4, 5);
+            var loc = shader_get_uniform(shader, uniform_name);
+            array_push(uniforms, [shader_set_uniform_f, loc, val]);
+        } else if (string_ends_with(key, "_vec3")) {
+            var uniform_name = string_delete(key, string_length(key)-4, 5);
+            var loc = shader_get_uniform(shader, uniform_name);
+            array_push(uniforms, [shader_set_uniform_f, loc, val]);
+        } else if (string_ends_with(key, "_vec4")) {
+            var uniform_name = string_delete(key, string_length(key)-4, 5);
+            var loc = shader_get_uniform(shader, uniform_name);
+            array_push(uniforms, [shader_set_uniform_f, loc, val]);
+        }        
+    }
+    
+    array_push(uniforms, [shader_set_uniform_i, shader_get_uniform(shader, "from_tex"), [0]]);
+    array_push(uniforms, [shader_set_uniform_i, shader_get_uniform(shader, "to_tex"), [1]]);
+    array_push(uniforms, [shader_set_uniform_f, shader_get_uniform(shader, "ratio"), [room_width / room_height]]);
 };
