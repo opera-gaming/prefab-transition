@@ -6,6 +6,7 @@ fade_length = 2.0;
 in_target = false;
 shaders = [
   shdr_angular,
+  shdr_bounce,
   shdr_bowtie,
   shdr_burn,
   shdr_butterfly_wave,
@@ -64,6 +65,7 @@ shaders = [
 
 defaults = [
   { starting_angle_f: 90.0}, // shdr_angular
+  { shadow_colour_vec4: [0.0,0.0,0.0,0.6], shadow_height_f: 0.075, bounces_f: 3.0 }, // shdr_bounce
   { vertical_b: false }, // shdr_bowtie
   { color_vec3: [0.9, 0.4, 0.2] }, // shdr_burn
   { amplitude_f: 1.0, waves_f: 30.0, color_separation: 0.3 }, // shdr_butterfly_wave

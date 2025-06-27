@@ -22,6 +22,7 @@
     {"name":"obj_transition","order":4,"path":"objects/obj_transition/obj_transition.yy",},
     {"name":"rm_room2","order":1,"path":"rooms/rm_room2/rm_room2.yy",},
     {"name":"shdr_angular","order":36,"path":"shaders/shdr_angular/shdr_angular.yy",},
+    {"name":"shdr_bounce","order":57,"path":"shaders/shdr_bounce/shdr_bounce.yy",},
     {"name":"shdr_bowtie","order":4,"path":"shaders/shdr_bowtie/shdr_bowtie.yy",},
     {"name":"shdr_burn","order":37,"path":"shaders/shdr_burn/shdr_burn.yy",},
     {"name":"shdr_butterfly_wave","order":30,"path":"shaders/shdr_butterfly_wave/shdr_butterfly_wave.yy",},

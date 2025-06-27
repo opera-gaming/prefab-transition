@@ -42,6 +42,7 @@
     {"id":{"name":"rm_room2","path":"rooms/rm_room2/rm_room2.yy",},},
     {"id":{"name":"scr_room_goto_transition","path":"scripts/scr_room_goto_transition/scr_room_goto_transition.yy",},},
     {"id":{"name":"shdr_angular","path":"shaders/shdr_angular/shdr_angular.yy",},},
+    {"id":{"name":"shdr_bounce","path":"shaders/shdr_bounce/shdr_bounce.yy",},},
     {"id":{"name":"shdr_bowtie","path":"shaders/shdr_bowtie/shdr_bowtie.yy",},},
     {"id":{"name":"shdr_burn","path":"shaders/shdr_burn/shdr_burn.yy",},},
     {"id":{"name":"shdr_butterfly_wave","path":"shaders/shdr_butterfly_wave/shdr_butterfly_wave.yy",},},

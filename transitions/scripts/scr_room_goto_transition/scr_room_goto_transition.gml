@@ -1,5 +1,6 @@
 enum TransitionType {
     kAngular,
+    kBounce,
     kBowTie,
     kBurn,
     kButterflyWave,
