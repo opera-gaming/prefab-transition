@@ -1,3 +1,7 @@
+/**
+ * Enum representing the various screen transition effects available.
+ * These can be used to define how the screen should animate when changing rooms.
+ */
 enum TransitionType {
     kAngular,
     kBounce,
@@ -57,6 +61,17 @@ enum TransitionType {
     kZoomInCircles,
 };
 
+/**
+ * Transitions to another room using a specified visual effect.
+ * If no transition is currently active, it creates one and sets its properties.
+ * Example:
+ * room_goto_transition(room_level2, TransitionType.kCircleCrop, 1.5, {});
+ *
+ * @param {Room} room - The target room to transition to.
+ * @param {TransitionType} type - The visual transition effect to use.
+ * @param {number} time - Duration of the transition in seconds.
+ * @param {any} params - Optional parameters passed to configure the transition.
+ */
 function room_goto_transition(room, type, time, params) {
     if (!variable_global_exists("active_transition") || global.active_transition == -1) {
         global.active_transition = instance_create_layer(0,0, "Instances", obj_transition);
@@ -65,4 +80,5 @@ function room_goto_transition(room, type, time, params) {
         global.active_transition.set_type(type, params);
     }
 }
+
 #export room_goto_transition
