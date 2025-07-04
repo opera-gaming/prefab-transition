@@ -81,4 +81,4 @@ function room_goto_transition(room, type, time, params) {
     }
 }
 
-#export room_goto_transition
+#export room_goto_transition, TransitionType

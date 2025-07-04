@@ -1,6 +1,6 @@
 {
   "name": "@gm-prefabs/RoomTransitions",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Transitions between rooms",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
   "author": "GameMaker",
   "license": "",
   "files": [
-    "io.gamemaker.roomtransitions-1.0.0.yymps"
+    "io.gamemaker.roomtransitions-1.1.0.yymps"
   ],
   "gm": {
 	"visible": true,
