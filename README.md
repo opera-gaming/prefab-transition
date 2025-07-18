@@ -5,7 +5,12 @@ GameMaker prefab for `room_goto_transition()` that captures the screen content i
 The transitions are MIT shaders from https://gl-transitions.com
 Thanks to the following shader authors:
 ```
-@Flexi23, 0gust1, Adrian Purser, bobylito, dycm8009, Eke Péter, Fabien Benetou, Fernando Kuteken, Gaëtan Renaudeau, gre, Gunnar Roth, huynx, mandubian, Matt DesLauriers, mikolalysenko, Mr Speaker, nwoeanhinnogaehr, Paweł Płóciennik, paniq, P-Seebauer, pschroen, pthrasher, rectalogic, Rich Harris, Sergey Kosarevsky, TimDonselaar, Xaychru, Zeh Fernando
+@Flexi23, 0gust1, Adrian Purser, bobylito, dycm8009, Eke Péter,
+Fabien Benetou, Fernando Kuteken, Gaëtan Renaudeau, gre,
+Gunnar Roth, huynx, mandubian, Matt DesLauriers, mikolalysenko,
+Mr Speaker, nwoeanhinnogaehr, Paweł Płóciennik, paniq,
+P-Seebauer, pschroen, pthrasher, rectalogic, Rich Harris,
+Sergey Kosarevsky, TimDonselaar, Xaychru, Zeh Fernando
 ```
 
 [Try it on GX.games](https://gx.games/games/rhk5t6/transition/tracks/e6f33c97-7f84-4d47-a0eb-3d99dabb23c8/)
@@ -22,6 +27,7 @@ Thanks to the following shader authors:
  * @param {number} time - Duration of the transition in seconds.
  * @param {any} params - Optional parameters passed to configure the transition.
  */
+function room_goto_transition(room, type, time, params);
 
 /**
  * Enum representing the various screen transition effects available.
