@@ -1,5 +1,8 @@
-from_surface = surface_create(room_width, room_height);
-to_surface = surface_create(room_width, room_height);
+var app = application_get_position();
+screen_width = app[2] - app[0];
+screen_height = app[3] - app[1];
+from_surface = surface_create(screen_width, screen_height);
+to_surface = surface_create(screen_width, screen_height);
 t = 0.0;
 target_room = -1;
 fade_length = 2.0;
@@ -175,5 +178,5 @@ set_type = function (type, p) {
     
     array_push(uniforms, [shader_set_uniform_i, shader_get_uniform(shader, "from_tex"), [0]]);
     array_push(uniforms, [shader_set_uniform_i, shader_get_uniform(shader, "to_tex"), [1]]);
-    array_push(uniforms, [shader_set_uniform_f, shader_get_uniform(shader, "ratio"), [room_width / room_height]]);
+    array_push(uniforms, [shader_set_uniform_f, shader_get_uniform(shader, "ratio"), [display_get_width() / display_get_height()]]);
 };
